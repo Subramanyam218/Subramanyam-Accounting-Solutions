@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
    <url>
-      <loc>https://lavanya.github.io/mywebsite/</loc>
-      <lastmod>2025-10-20</lastmod>
+      <loc>https://subramanyam218.github.io/Subramanyam-Accounting-Solutions/</loc>
+      <lastmod>2025-11-03</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
+
    <url>
-      <loc>https://lavanya.github.io/mywebsite/about.html</loc>
-      <lastmod>2025-10-20</lastmod>
+      <loc>https://subramanyam218.github.io/Subramanyam-Accounting-Solutions/about.html</loc>
+      <lastmod>2025-11-03</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
+
+   <url>
+      <loc>https://subramanyam218.github.io/Subramanyam-Accounting-Solutions/services.html</loc>
+      <lastmod>2025-11-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://subramanyam218.github.io/Subramanyam-Accounting-Solutions/contact.html</loc>
+      <lastmod>2025-11-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://subramanyam218.github.io/Subramanyam-Accounting-Solutions/itr-filing.html</loc>
+      <lastmod>2025-11-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.85</priority>
+   </url>
+
 </urlset>
