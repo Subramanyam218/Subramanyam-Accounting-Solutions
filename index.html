@@ -191,10 +191,13 @@
       <form id="enquiry-form">
         <label for="name">Full Name</label>
         <input id="name" name="from_name" placeholder="Enter your full name" required />
+
         <label for="pan">PAN (optional)</label>
         <input id="pan" name="pan" placeholder="ABCDE1234F" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" />
+
         <label for="phone">Phone / WhatsApp</label>
         <input id="phone" name="phone" placeholder="+91 7904161956" required />
+
         <label for="service">Service Interested</label>
         <select id="service" name="service" required>
           <option value="">Select a Service</option>
@@ -204,8 +207,10 @@
           <option>TDS Reconciliation</option>
           <option>Form-16 / 26AS Assistance</option>
         </select>
+
         <label for="message">Message (Optional)</label>
         <textarea id="message" name="message" placeholder="Enter your message here..."></textarea>
+
         <button type="submit" class="btn-primary submit">Submit</button>
       </form>
     </section>
@@ -261,10 +266,10 @@
   </footer>
 
   <script>
-    const EMAILJS_PUBLIC_KEY = "yS4po_2oLlN9j1yFL";
-    const EMAILJS_SERVICE_ID = "service_q1dot2h";
-    const EMAILJS_TEMPLATE_ID = "template_s9cbllc";
-    const WHATSAPP_PHONE = "917904161956"; // without '+'
+    const EMAILJS_PUBLIC_KEY = "n94IqSDqnuR-u_7y5";  
+    const EMAILJS_SERVICE_ID = "service_65jm59m";  
+    const EMAILJS_TEMPLATE_ID = "template_7pf2ux8";  
+    const WHATSAPP_PHONE = "917904161956";
 
     (function() {
       emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -289,10 +294,8 @@
       };
 
       try {
-        // ✅ Send email via EmailJS
         await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
 
-        // ✅ Also open WhatsApp automatically
         const waText = `*New Enquiry Received*\n\n👤 Name: ${name}\n🧾 Service: ${service}\n📞 Phone: ${phone}\n🆔 PAN: ${pan}\n💬 Message: ${message}`;
         const waURL = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(waText)}`;
         window.open(waURL, "_blank");
@@ -307,7 +310,3 @@
   </script>
 </body>
 </html>
-
-
-
-
